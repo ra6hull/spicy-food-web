@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reference — Spicy Food (Delivery & Quality Standards)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* page-specific small styles */
+    .ref-hero {
+      background: linear-gradient(90deg, rgba(255,99,71,0.06), rgba(255,154,120,0.04));
+      padding: 32px 16px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 18px auto;
+      max-width: 1100px;
+    }
+    .ref-container { max-width:1100px; margin: 18px auto; padding: 0 16px; }
+    .ref-grid { display:grid; grid-template-columns: 1fr 320px; gap:18px; align-items:start; }
+    .ref-card { background:#fff; padding:16px; border-radius:8px; box-shadow:0 8px 18px rgba(0,0,0,0.04); }
+    .toc { list-style:none; padding-left:0; margin:8px 0 0 0; }
+    .toc li { margin:8px 0; }
+    .section-title { display:flex; gap:10px; align-items:center; margin-bottom:8px; color:#ff6347; }
+    .steps { list-style:decimal; padding-left:22px; color:#333; }
+    .stat { display:flex; gap:12px; align-items:center; margin-bottom:8px; }
+    .stat .dot { width:10px;height:10px;border-radius:50%;background:#ff6347;display:inline-block; }
+    .faq-item { margin-bottom:10px; }
+    .btn-row { display:flex; gap:10px; justify-content:flex-end; margin-top:12px; }
+    .muted { color:#666; font-size:0.95rem; }
+    @media (max-width:920px){ .ref-grid{ grid-template-columns: 1fr; } .btn-row{justify-content:center;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-pepper-hot"></i> Spicy Food</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-arrow-left"></i> Back to Site</a></li>
+          <li><a href="index.html#menu"><i class="fas fa-utensils"></i> Menu</a></li>
+          <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="ref-container">
+    <div class="ref-hero ref-card">
+      <h2 style="margin-bottom:6px;"><i class="fas fa-book"></i> Reference — Delivery Process & Quality Standards</h2>
+      <p class="muted">This page describes how Spicy Food handles orders, ensures food safety and packaging standards, partners with kitchens, and what you can expect as a customer or partner.</p>
+      <div class="btn-row" style="margin-top:12px;">
+        <button onclick="window.print()" class="btn"><i class="fas fa-print"></i> Print</button>
+        <a href="index.html" class="btn"><i class="fas fa-home"></i> Home</a>
+      </div>
+    </div>
+
+    <div class="ref-grid">
+      <!-- main column -->
+      <div>
+        <!-- Delivery Process -->
+        <section id="process" class="ref-card" style="margin-bottom:16px;">
+          <div class="section-title"><i class="fas fa-shipping-fast"></i><h3>Delivery Process — Step by step</h3></div>
+          <ol class="steps">
+            <li><strong>Order placement:</strong> Customer selects dishes, confirms address, and pays (or chooses COD if available).</li>
+            <li><strong>Order acceptance:</strong> Restaurant/partner receives the order and confirms preparation time in the partner panel.</li>
+            <li><strong>Preparation:</strong> Food is prepared under monitored conditions. Estimated preparation time is updated to the customer.</li>
+            <li><strong>Pickup:</strong> A delivery rider assigned to the order picks up the sealed package and scans it (order ID) to mark pickup time.</li>
+            <li><strong>In-transit:</strong> Rider follows the most efficient route. Customers receive ETA updates via SMS/push (if enabled).</li>
+            <li><strong>Delivery & Confirmation:</strong> Rider delivers order; customer confirms receipt. Contactless drop-off option is available.</li>
+            <li><strong>Feedback & Rating:</strong> Customer can rate the meal and delivery; partner receives performance metrics.</li>
+          </ol>
+
+          <h4 style="margin-top:12px;">Key SLAs</h4>
+          <ul>
+            <li>Order acceptance: within <strong>5—10 minutes</strong>.</li>
+            <li>Pickup after ready: within <strong>10—15 minutes</strong>.</li>
+            <li>Delivery time target: <strong>25—45 minutes</strong> depending on distance and traffic.</li>
+          </ul>
+        </section>
+
+        <!-- Food safety & hygiene -->
+        <section id="safety" class="ref-card" style="margin-bottom:16px;">
+          <div class="section-title"><i class="fas fa-utensils"></i><h3>Food Safety & Hygiene</h3></div>
+          <p class="muted">We follow strict hygiene protocols to ensure every meal is safe and tasty.</p>
+          <ul>
+            <li><strong>Kitchen checks:</strong> All partner kitchens must pass an initial onboarding checklist: clean surfaces, separate raw/cooked food areas, handwashing facilities, and proper storage temperatures.</li>
+            <li><strong>Temperature control:</strong> Hot items maintained >60°C until packaging; cold items kept below 8°C until dispatched where applicable.</li>
+            <li><strong>Personal hygiene:</strong> Gloves, hairnets, and frequent handwashing are required for prep staff. No bare-hand contact with ready-to-eat foods.</li>
+            <li><strong>Expiry & labeling:</strong> Ingredients and pre-made items must be labeled with manufacturing/use-by dates and stored correctly.</li>
+            <li><strong>Periodic audits:</strong> Random spot-check audits and hygiene retraining for partners.</li>
+          </ul>
+        </section>
+
+        <!-- Packaging standards -->
+        <section id="packaging" class="ref-card" style="margin-bottom:16px;">
+          <div class="section-title"><i class="fas fa-box"></i><h3>Packaging Standards</h3></div>
+          <p class="muted">Packaging protects food quality, temperature, and prevents leakage while minimizing waste.</p>
+          <ul>
+            <li><strong>Sealed containers:</strong> All hot items are served in leak-resistant, insulated containers with tamper-evident seals.</li>
+            <li><strong>Separation:</strong> Sauces and gravies are packed separately to avoid sogginess (where applicable).</li>
+            <li><strong>Sustainable options:</strong> We encourage biodegradable or recyclable packaging for partners; plastic use is minimized.</li>
+            <li><strong>Cutlery & condiments:</strong> Optional and included only on request to reduce single-use waste.</li>
+          </ul>
+        </section>
+
+        <!-- Ordering, Payment & Refunds -->
+        <section id="orders" class="ref-card" style="margin-bottom:16px;">
+          <div class="section-title"><i class="fas fa-receipt"></i><h3>Ordering, Payment & Refund Policy</h3></div>
+          <h4>Payments</h4>
+          <p class="muted">We support online payments via major Indian gateways (cards, UPI, wallets) and Cash-on-Delivery where enabled.</p>
+          <h4>Order confirmation & cancellation</h4>
+          <ul>
+            <li>Customers can cancel before the restaurant accepts the order for a full refund (where payment was taken).</li>
+            <li>If the restaurant has already started preparing the meal, cancellation may be partial/refund at our discretion.</li>
+          </ul>
+          <h4>Refunds</h4>
+          <p>Refunds for issues (wrong item, missing item, cold/spoiled food) can be requested via Contact or the order page within 24 hours. We investigate and process refunds within 3–7 business days.</p>
+        </section>
+
+        <!-- Partner onboarding -->
+        <section id="partners" class="ref-card" style="margin-bottom:16px;">
+          <div class="section-title"><i class="fas fa-handshake"></i><h3>Partner (Kitchen) Onboarding</h3></div>
+          <p class="muted">We partner with small restaurants and cloud kitchens that meet our standards.</p>
+          <ol>
+            <li>Register using the partner form and provide FSSAI (or local) license and business details.</li>
+            <li>On-site or virtual inspection by our operations team.</li>
+            <li>Menu & pricing review: we advise on portioning and pricing for consistency.</li>
+            <li>Training: Hygiene, packaging standards, and partner panel usage.</li>
+            <li>Go-live: monitored launch with support for the first 7–14 days.</li>
+          </ol>
+        </section>
+
+        <!-- Sustainability -->
+        <section id="sustainability" class="ref-card" style="margin-bottom:16px;">
+          <div class="section-title"><i class="fas fa-leaf"></i><h3>Sustainability & Community</h3></div>
+          <p class="muted">We aim to reduce environmental impact and support local communities.</p>
+          <ul>
+            <li>Packaging reduction: optional cutlery and biodegradable packaging for customers who opt-in.</li>
+            <li>Food waste partnerships: surplus food donation programs with local NGOs (subject to safety protocols).</li>
+            <li>Local sourcing: preference to local producers to reduce transport footprint and boost local economy.</li>
+          </ul>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faq" class="ref-card" style="margin-bottom:16px;">
+          <div class="section-title"><i class="fas fa-question-circle"></i><h3>Frequently Asked Questions</h3></div>
+
+          <div class="faq-item">
+            <strong>Q: How can I request a refund?</strong>
+            <p class="muted">A: Use the Contact form with order ID and photos (if relevant). We respond within 24–72 hours.</p>
+          </div>
+
+          <div class="faq-item">
+            <strong>Q: Can I schedule an order for later?</strong>
+            <p class="muted">A: Yes — we support scheduled orders via the order page when the restaurant enables it.</p>
+          </div>
+
+          <div class="faq-item">
+            <strong>Q: Do you deliver to remote areas?</strong>
+            <p class="muted">A: Delivery coverage depends on partner kitchens and rider availability. Enter your address at checkout to see availability.</p>
+          </div>
+
+          <div class="faq-item">
+            <strong>Q: Are allergens listed?</strong>
+            <p class="muted">A: Menu items include short descriptions. For allergen concerns (nuts, gluten, dairy), contact us before placing the order; partners must disclose common allergens.</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- side column -->
+      <aside>
+        <div class="ref-card">
+          <h4 style="margin-top:0;"><i class="fas fa-info-circle"></i> Quick Reference</h4>
+          <ul class="toc">
+            <li><a href="#process">Delivery Process</a></li>
+            <li><a href="#safety">Food Safety</a></li>
+            <li><a href="#packaging">Packaging</a></li>
+            <li><a href="#orders">Refunds & Payments</a></li>
+            <li><a href="#partners">Partner Onboarding</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact-ref">Contact & Escalation</a></li>
+          </ul>
+
+          <hr style="margin:12px 0; border:none; border-top:1px solid #f0e6e6;" />
+
+          <div class="section-title"><i class="fas fa-phone"></i><h4>Contact & Escalation</h4></div>
+          <p class="muted" id="contact-ref">
+            Email: <a href="mailto:support@spicyfood.example">support@spicyfood.example</a><br>
+            Phone: <a href="tel:+911234567890">+91 12345 67890</a><br>
+            For urgent issues (wrong/unsafe food), mark your subject as <strong>"URGENT - Food Safety"</strong>.
+          </p>
+
+          <hr style="margin:12px 0; border:none; border-top:1px solid #f0e6e6;" />
+
+          <div class="section-title"><i class="fas fa-file-contract"></i><h4>Legal & Privacy</h4></div>
+          <p class="muted">We collect minimal data required to deliver orders. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a> for details.</p>
+
+          <hr style="margin:12px 0; border:none; border-top:1px solid #f0e6e6;" />
+
+          <div>
+            <h4 class="muted">Useful documents</h4>
+            <ul style="padding-left:18px;">
+              <li>Partner Onboarding Checklist (PDF)</li>
+              <li>Packaging Guidelines (PDF)</li>
+              <li>Hygiene Checklist (PDF)</li>
+            </ul>
+            <p class="muted" style="font-size:0.9rem;">(Contact support to request editable copies.)</p>
+          </div>
+        </div>
+
+        <div class="ref-card" style="margin-top:16px;">
+          <h4 style="margin-top:0;"><i class="fas fa-chart-line"></i> Quick Stats</h4>
+          <div class="stat"><span class="dot"></span><div><strong>1,200+</strong><div class="muted">Orders served</div></div></div>
+          <div class="stat"><span class="dot"></span><div><strong>85</strong><div class="muted">Partner kitchens</div></div></div>
+          <div class="stat"><span class="dot"></span><div><strong>98%</strong><div class="muted">On-time rate</div></div></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer style="margin-top:26px;">
+    <p style="text-align:center;color:#fff;background:#333;padding:14px 0;margin:0;">&copy; 2024 Spicy Food. All rights reserved. | <a href="terms.html" style="color:#fff;text-decoration:underline;">Terms</a> | <a href="privacy.html" style="color:#fff;text-decoration:underline;">Privacy</a></p>
+  </footer>
+
+  <script>
+    // small UX: smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const href = a.getAttribute('href');
+        if (href.length > 1) {
+          e.preventDefault();
+          const el = document.querySelector(href);
+          if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>

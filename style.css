@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #232424;
+    color: #ff6347;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease; 
+}
+
+header nav ul li a:hover {
+    color: #ff6347; 
+}
+
+#home {
+    background: url('food-background.jpg') ;
+    height: 60vh;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://img.freepik.com/premium-photo/collection-food-from-companys-website_908344-26875.jpg?semt=ais_hybrid);
+}
+
+#home h2 {
+    font-size: 2.5rem;
+}
+
+#home p {
+    margin: 1rem 0;
+}
+
+.btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #e5533c; 
+}
+
+#menu {
+    padding: 2rem;
+    background: #f3c7c7;
+    text-align: center;
+}
+
+#menu h2 {
+    margin-bottom: 1.5rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.menu-item {
+    background: #eadfeb;
+    padding: 1rem;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.menu-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+#about {
+    padding: 2rem;
+    background: #faf7d9;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+}
+
+#contact {
+    padding: 100px;
+    background: #a7c6ca;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+#contact button:hover {
+    background-color: #555; 
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+button, .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.food-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+#promo-video {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+#promo-video h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+/* ---------- About section additions ---------- */
+.about-section {
+  padding: 2.5rem 1rem;
+  background: linear-gradient(180deg, #faf7d9 0%, #fff 100%);
+}
+.about-inner { max-width: 1100px; margin: 0 auto; }
+
+.about-header .lead { margin-top: 0.5rem; color:#333; }
+.read-more-btn {
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid #ff6347;
+  color: #ff6347;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* grid for mission/vision/values */
+.about-grid { display:flex; gap:1rem; margin:1.5rem 0; flex-wrap:wrap; }
+.about-card { flex:1; min-width:220px; background:#fff; padding:15px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.values-list { list-style: none; padding-left: 0; margin-top:8px; }
+.values-list li { padding:4px 0; }
+
+/* Stats row */
+.stats-row { display:flex; gap:1rem; justify-content: space-between; margin: 1.5rem 0; flex-wrap:wrap; }
+.stat { background:#fff; flex:1; min-width:150px; padding:12px; border-radius:8px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.05); }
+.stat h4 { font-size:1.6rem; color:#ff6347; margin-bottom:6px; }
+
+/* Team */
+.team-section { margin: 1.5rem 0; }
+.team-grid { display:flex; gap:1rem; flex-wrap:wrap; }
+.team-card { background:#fff; padding:12px; width:180px; border-radius:8px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.05); }
+.team-card img { width:100%; height:120px; object-fit:cover; border-radius:6px; margin-bottom:8px; }
+
+/* Testimonials slider */
+.testimonials { margin: 1.5rem 0; }
+.testimonial-slider { display:flex; align-items:center; gap:10px; }
+.t-track { flex:1; overflow:hidden; }
+.testimonial { display:none; background:#fff; padding:14px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.05); min-height:80px; }
+.testimonial.active { display:block; }
+.t-prev, .t-next { background:#ff6347; color:#fff; border:none; padding:10px 12px; border-radius:6px; cursor:pointer; }
+
+/* FAQ */
+.faq-section { margin:1.5rem 0; }
+.faq-question { width:100%; text-align:left; padding:12px; border-radius:8px; border:1px solid #eee; background:#fff; cursor:pointer; margin-top:10px; font-weight:600; }
+.faq-answer { padding:10px 12px; display:none; border-left:3px solid #ff6347; background:#fafafa; border-radius:0 8px 8px 8px; }
+
+/* Newsletter */
+.newsletter { margin:1.5rem 0; text-align:center; }
+#newsletter-form { display:flex; gap:10px; max-width:480px; margin: 8px auto 0; justify-content:center; }
+#newsletter-form input { padding:10px; border-radius:6px; border:1px solid #ddd; width:70%; }
+#newsletter-form .btn { padding:10px 16px; }
+
+/* Responsive tweaks */
+@media (max-width:800px) {
+  .about-grid, .team-grid, .stats-row { flex-direction: column; }
+  #newsletter-form { flex-direction:column; }
+  #newsletter-form input { width:100%; }
+}
+/* ---------- Enhanced Home / Hero styles ---------- */
+.home-hero { position: relative; padding: 40px 0; overflow: hidden; }
+.home-hero .hero-overlay {
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.05));
+  pointer-events:none;
+}
+.home-inner { display:flex; gap:24px; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; padding: 20px; }
+.hero-left { flex:1; color:#fff; z-index:2; max-width:640px; }
+.hero-right { width:420px; z-index:2; }
+.home-hero h1 { font-size:2.2rem; margin-bottom:10px; color:#fff; }
+.hero-lead { margin-bottom:14px; color:#fff; opacity:0.95; }
+.promo-pill { display:inline-block; background:rgba(255,255,255,0.12); color:#fff; padding:6px 10px; border-radius:20px; font-weight:600; margin-bottom:12px; }
+
+.hero-actions { display:flex; gap:12px; align-items:flex-start; margin-bottom:12px; flex-wrap:wrap; }
+.search-quick { display:flex; gap:8px; }
+.search-quick input { padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.12); min-width:220px; background:rgba(255,255,255,0.06); color:#fff; }
+.search-quick input::placeholder { color:#fff; opacity:0.8; }
+.search-quick button { padding:10px 12px; border-radius:8px; background:#ff6347; border:none; color:#fff; cursor:pointer; }
+
+.quick-order .quick-btn { background:rgba(255,255,255,0.08); color:#fff; border-radius:8px; padding:8px 10px; border:1px solid rgba(255,255,255,0.06); cursor:pointer; }
+
+.hero-ctas { display:flex; gap:10px; margin-top:8px; }
+.primary-cta { background:#ff6347; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
+.secondary-cta { background:transparent; border:1px solid rgba(255,255,255,0.14); color:#fff; padding:10px 12px; border-radius:8px; text-decoration:none; }
+
+.trust-row { display:flex; gap:12px; margin-top:14px; color:#fff; font-size:0.95rem; flex-wrap:wrap; }
+.trust { display:flex; gap:8px; align-items:center; background:rgba(255,255,255,0.04); padding:8px 10px; border-radius:8px; }
+
+.hero-right .featured-wrap { background:linear-gradient(180deg,#fff,#fff); border-radius:12px; padding:12px; color:#222; box-shadow:0 8px 30px rgba(0,0,0,0.08); }
+.featured-header { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.featured-track { display:flex; gap:10px; margin-top:10px; overflow:hidden; }
+.feat-card { min-width:180px; background:#fff; border-radius:10px; padding:8px; display:flex; gap:8px; align-items:center; border:1px solid #f3eaea; }
+.feat-card img { width:66px; height:66px; object-fit:cover; border-radius:8px; }
+.feat-info { display:flex; flex-direction:column; gap:4px; }
+.feat-price { font-weight:700; color:#ff6347; margin-top:6px; }
+.feat-nav { background:#ff6347; color:#fff; border:none; padding:6px 8px; border-radius:6px; cursor:pointer; }
+
+.featured-actions { margin-top:10px; text-align:center; }
+#feat-add { background:#232424; color:#fff; padding:8px 12px; border-radius:8px; border:none; cursor:pointer; }
+
+.app-promo { margin-top:16px; text-align:center; }
+.app-promo .badge { background:linear-gradient(90deg,#fff,#fff8f6); padding:8px; border-radius:8px; font-weight:700; color:#333; display:inline-block; margin-bottom:8px; }
+.hero-image { width:100%; border-radius:10px; margin-top:8px; opacity:0.95; }
+
+.scroll-down { position:absolute; left:50%; bottom:12px; transform:translateX(-50%); background:rgba(255,255,255,0.1); color:#fff; padding:8px 10px; border-radius:50px; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; }
+
+.home-hero { background-image: url('https://img.freepik.com/premium-photo/collection-food-from-companys-website_908344-26875.jpg?semt=ais_hybrid'); background-size:cover; background-position:center; color:#fff; }
+
+/* responsive */
+@media (max-width:900px) {
+  .home-inner { flex-direction:column; align-items:flex-start; padding: 16px; }
+  .hero-right { width:100%; order:2; }
+  .hero-left { width:100%; order:1; }
+  .featured-track { overflow:auto; }
+}
